@@ -26,5 +26,17 @@ build_property.EnableCodeStyleSeverity =
 [C:/Users/pokrz/RiderProjects/MedStation/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/pokrz/RiderProjects/MedStation/Views/AdminPanelWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/pokrz/RiderProjects/MedStation/Views/EmployeePanelWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/pokrz/RiderProjects/MedStation/Views/MainMenuWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/pokrz/RiderProjects/MedStation/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/pokrz/RiderProjects/MedStation/Views/PatientPanelWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

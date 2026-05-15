@@ -77,3 +77,6 @@ C:\Users\pokrz\RiderProjects\MedStation\obj\Debug\net9.0\refint\MedStation.dll
 C:\Users\pokrz\RiderProjects\MedStation\obj\Debug\net9.0\MedStation.pdb
 C:\Users\pokrz\RiderProjects\MedStation\obj\Debug\net9.0\MedStation.genruntimeconfig.cache
 C:\Users\pokrz\RiderProjects\MedStation\obj\Debug\net9.0\ref\MedStation.dll
+C:\Users\pokrz\RiderProjects\MedStation\bin\Debug\net9.0\ReactiveUI.Fody.Helpers.dll
+C:\Users\pokrz\RiderProjects\MedStation\obj\Debug\net9.0\MedStation.csproj.Fody.CopyLocal.cache
+C:\Users\pokrz\RiderProjects\MedStation\obj\Debug\net9.0\MedStation.csproj.Fody.RuntimeCopyLocal.cache

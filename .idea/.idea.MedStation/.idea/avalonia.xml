@@ -3,7 +3,13 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="App.axaml" value="MedStation.csproj" />
+        <entry key="Views/AdminPanelWindow.axaml" value="MedStation.csproj" />
+        <entry key="Views/EmployeePanelWindow.axaml" value="MedStation.csproj" />
+        <entry key="Views/MainMenuWindow.axaml" value="MedStation.csproj" />
         <entry key="Views/MainWindow.axaml" value="MedStation.csproj" />
+        <entry key="Views/PatientPanelWindow.axaml" value="MedStation.csproj" />
+        <entry key="Views/UserControl1.axaml" value="MedStation.csproj" />
       </map>
     </option>
   </component>
