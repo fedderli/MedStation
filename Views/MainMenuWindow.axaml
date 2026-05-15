@@ -1,0 +1,64 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:MedStation.ViewModels"
+             x:Class="MedStation.Views.MainMenuWindow"
+             x:DataType="vm:MainMenuWindowViewModel"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450">
+   <UserControl.Styles>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="CornflowerBlue"/>
+            <Setter Property="BorderBrush" Value="RoyalBlue"/>
+            <Setter Property="BorderThickness" Value="8"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="40"/>
+            <Setter Property="Padding" Value="30"/>
+            <Setter Property="FontSize" Value="50"/>
+        </Style>
+        
+        <Style Selector="Button /template/ ContentPresenter#PART_ContentPresenter">
+            <Setter Property="Transitions">
+                <Transitions>
+                    <BrushTransition Property="Background" Duration="0:0:0.5"/>
+                    <BrushTransition Property="BorderBrush" Duration="0:0:0.5" />
+                </Transitions>
+            </Setter>
+        </Style>
+        
+        <Style Selector="Button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+            <Setter Property="Background" Value="RoyalBlue"/>
+            <Setter Property="BorderBrush" Value="#2A59E1"/> 
+        </Style>
+        
+        <Style Selector="Button:pressed ContentPresenter#PART_ContentPresenter">
+            <Setter Property="Background" Value="MediumTurquoise"/>
+        </Style>
+     </UserControl.Styles>
+
+    <Grid Background="Azure"> 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="MED STATION" Padding="20" 
+                   FontSize="30" Background="CornflowerBlue"
+                   FontWeight="Black" Foreground="Azure"
+                   TextAlignment="Center" />
+    
+        <Grid Grid.Row="1" Margin="30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Button Grid.Column="0" Content="Panel Pacjenta" Command="{Binding OpenPatient}"/>
+            <Button Grid.Column="1" Content="Panel Pracownika" Command="{Binding OpenEmployee}"/>
+            <Button Grid.Column="2" Content="Panel Admina" Command="{Binding OpenAdmin}"/>
+        </Grid>
+    </Grid>
+</UserControl>
