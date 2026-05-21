@@ -42,47 +42,47 @@ Projekt ma spełniać trzy funkcje:
 ---
 ## Baza danych
 
-### 1. Kolekcja: `Pracownicy`
+### 1. Kolekcja: `Employees`
 | Pole | Typ | Opis | Przykład |
 | :--- | :--- | :--- | :--- |
 | `Id` | **String** | Id Pracownika. | `"LE_7234012"` |
-| `Imie` | **String** | Imie Pracownika. | `"Gregory"` |
-| `Nazwisko` | **String** | Nazwisko Pracownika. | `"House"` |
-| `Specjalizacje` | **Array** | Lista specjalizacji Lekarza. | `["Nefrolog", "Diagnosta"]` |
-| `Zarobek` | **Int** | Płaca pracownika w złotówkach. | `10000` |
-| `Pacjeci` | **Array** | Lista aktualncyh pacjętów. | `["Rebecca Adler", "Amber Volakis"]` |
+| `Name` | **String** | Imie Pracownika. | `"Gregory"` |
+| `Last_Name` | **String** | Nazwisko Pracownika. | `"House"` |
+| `Specialization` | **Array** | Lista specjalizacji Lekarza. | `["Nefrolog", "Diagnosta"]` |
+| `Earnings` | **Int** | Płaca pracownika w złotówkach. | `10000` |
+| `Patients` | **Array** | Lista aktualncyh pacjętów. | `["Rebecca Adler", "Amber Volakis"]` |
 
-### 2. Kolekcja: `Pacjenci`
+### 2. Kolekcja: `Patients`
 | Pole | Typ | Opis | Przykład |
 | :--- | :--- | :--- | :--- |
 | `Id` | **String** | Id Pacjęta. | `"PA_3451234"` |
-| `Imie` | **String** | Imie Pacjęta. | `"Kamil"` |
-| `Nazwisko` | **String** | Nazwisko Pacjęta. | `"Wiśniewski"` |
-| `Recepty` | **Array** | Lista Recept. | `["RE_43242", "RE_12839"]` |
-| `Wizyty` | **Array** | Lista Wizyt. | `["WZ_34612", "WZ_34612"]` |
+| `Name` | **String** | Imie Pacjęta. | `"Kamil"` |
+| `Last_Name` | **String** | Nazwisko Pacjęta. | `"Wiśniewski"` |
+| `Prescriptions` | **Array** | Lista Recept. | `["RE_43242", "RE_12839"]` |
+| `Visits` | **Array** | Lista Wizyt. | `["WZ_34612", "WZ_34612"]` |
 
 
-### 3. Kolekcja: `Wizyty`
+### 3. Kolekcja: `Visits`
 | Pole | Typ | Opis | Przykład |
 | :--- | :--- | :--- | :--- |
 | `Id` | **String** | Id Wizyty. | `"WZ_34612"` |
-| `Id_Lekarza` | **String** | Id Pracownika. | `"LE_7234012"` |
-| `Id_Pacjenta` | **String** | Id Pacjenta. | `"PA_3451234"` |
-| `Data_Wizyty` | **String** | Data wizyty. | `21.07.2026` |
-| `Powód_Wizyty` | **String** | Powód wizyty. | `"Ból prawgo uda"` |
-| `Czy_Zrealizowano` | **Bool** | Czy zrealizowano Wizyte. | `False` |
+| `Id_Employee` | **String** | Id Pracownika. | `"LE_7234012"` |
+| `Id_Patient` | **String** | Id Pacjenta. | `"PA_3451234"` |
+| `Date_of_Visit` | **String** | Data wizyty. | `21.07.2026` |
+| `Reason_Visits` | **String** | Powód wizyty. | `"Ból prawgo uda"` |
+| `Is_Realized` | **Bool** | Czy zrealizowano Wizyte. | `False` |
 
-### 4. Kolekcja: `Recepty`
+### 4. Kolekcja: `Prescriptions`
 | Pole | Typ | Opis | Przykład |
 | :--- | :--- | :--- | :--- |
 | `Id` | **String** | Id Wizyty. | `"RE_43242"` |
 | `Id_Lekarza` | **Int** | Id Pracownika. | `"LE_7234012"` |
-| `Id_Pacjenta` | **Int** | Id Pacjenta. | `"PA_3451234"` |
-| `Data_Wydania` | **String** | Data wydania recepty. | `"21.07.2026"` |
-| `Data_Wygasniecia` | **String** |  Data wygasnięcia recepty. | `"28.07.2026"` |
-| `Lek` | **String** |  Nazwa przepisanego leku | `"Vicodin"` |
-| `Dawkowanie` | **String** |  Nazwa przepisanego leku | `"1 tabletka do posiłku rano i wieczorem"` |
-| `Czy_Zrealizowano` | **Bool** | Czy zrealizowano recepte. | `True` |
+| `Id_Patient` | **Int** | Id Pacjenta. | `"PA_3451234"` |
+| `Issue_Date` | **String** | Data wydania recepty. | `"21.07.2026"` |
+| `Expiration_Date` | **String** |  Data wygasnięcia recepty. | `"28.07.2026"` |
+| `Medicament` | **String** |  Nazwa przepisanego leku | `"Vicodin"` |
+| `Dosage` | **String** |  Nazwa przepisanego leku | `"1 tabletka do posiłku rano i wieczorem"` |
+| `Is_Realized` | **Bool** | Czy zrealizowano recepte. | `True` |
 
 
 
