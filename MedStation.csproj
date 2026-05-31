@@ -28,9 +28,6 @@
           <PrivateAssets>all</PrivateAssets>
         </PackageReference>
         <PackageReference Include="ReactiveUI.Fody" Version="19.5.41" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Models\" />
+        <PackageReference Include="supabase-csharp" Version="0.16.2" />
     </ItemGroup>
 </Project>
