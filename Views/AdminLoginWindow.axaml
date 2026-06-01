@@ -25,16 +25,16 @@
           </Grid.RowDefinitions>
           <Grid Grid.Column="0" Grid.Row="0" Background="CornflowerBlue" > 
               <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="Auto"/>
                   <ColumnDefinition Width="*"/>
               </Grid.ColumnDefinitions>
-              <Button Grid.Column="0"  Content="X" Height="50" Width="50" HorizontalContentAlignment="Center"
-                      Margin="20 0 0 0 " Foreground="AliceBlue" FontSize="30" Command="{Binding openMainMenu}"/>
               
-              <TextBlock Grid.Column="1"  Text="MED STATION" Padding="20"
-                          FontSize="30" Background="CornflowerBlue"
-                          FontWeight="Black" Foreground="Azure"
-                          TextAlignment="Center" />
+              <TextBlock Text="MED STATION" Padding="20"
+                         FontSize="30" Background="CornflowerBlue"
+                         FontWeight="Black" Foreground="Azure"
+                         TextAlignment="Center" HorizontalAlignment="Center" />
+              
+              <Button Content="X" Height="50" Width="50" HorizontalContentAlignment="Center"
+                      Margin="20 0 0 0 " Foreground="AliceBlue" FontSize="30" Command="{Binding openMainMenu}"/>
           </Grid>
           <Border Grid.Row="1" Grid.Column="0" CornerRadius="15" Background="CornflowerBlue"
                   Margin="150" Height="400" Width="800"
