@@ -2,6 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:MedStation.ViewModels"
+             x:DataType="vm:AdminLoginWindowViewModel"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="MedStation.Views.AdminLoginWindow"
              Background="Azure"
@@ -27,7 +29,7 @@
                   <ColumnDefinition Width="*"/>
               </Grid.ColumnDefinitions>
               <Button Grid.Column="0"  Content="X" Height="50" Width="50" HorizontalContentAlignment="Center"
-                      Margin="20 0 0 0 " Foreground="AliceBlue" FontSize="30"/>
+                      Margin="20 0 0 0 " Foreground="AliceBlue" FontSize="30" Command="{Binding openMainMenu}"/>
               
               <TextBlock Grid.Column="1"  Text="MED STATION" Padding="20"
                           FontSize="30" Background="CornflowerBlue"

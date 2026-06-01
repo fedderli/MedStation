@@ -7,7 +7,7 @@ public class MainMenuWindowViewModel : ViewModelBase
 {
     public MainMenuWindowViewModel(MainWindowViewModel mainWindow)
     {
-        OpenAdmin = ReactiveCommand.Create(() => { mainWindow.CurrentView = new AdminLoginWindowViewModel(); });
+        OpenAdmin = ReactiveCommand.Create(() => { mainWindow.CurrentView = new AdminLoginWindowViewModel(mainWindow); });
         OpenEmployee = ReactiveCommand.Create(() => { mainWindow.CurrentView = new EmployeePanelWindowViewModel(); });
         OpenPatient = ReactiveCommand.Create(() => { mainWindow.CurrentView = new PatientPanelWindowViewModel(); });
     }

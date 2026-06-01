@@ -29,6 +29,7 @@
         <DataTemplate DataType="{x:Type vm:AdminLoginWindowViewModel}">
             <views:AdminLoginWindow/>
         </DataTemplate>
+        
     </Window.DataTemplates>
 
 
