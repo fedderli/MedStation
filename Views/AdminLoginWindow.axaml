@@ -1,0 +1,72 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="MedStation.Views.AdminLoginWindow"
+             Background="Azure"
+             >
+        <UserControl.Styles>
+            <Style Selector="TextBox">
+                <Setter Property="Margin" Value="20"/>
+                <Setter Property="Padding" Value="20"/>
+                <Setter Property="Background" Value="AliceBlue"/>
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+            
+        </UserControl.Styles>
+    
+      <Grid>
+          <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="*"/>
+          </Grid.RowDefinitions>
+          <Grid Grid.Column="0" Grid.Row="0" Background="CornflowerBlue" > 
+              <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto"/>
+                  <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <Button Grid.Column="0"  Content="X" Height="50" Width="50" HorizontalContentAlignment="Center"
+                      Margin="20 0 0 0 " Foreground="AliceBlue" FontSize="30"/>
+              
+              <TextBlock Grid.Column="1"  Text="MED STATION" Padding="20"
+                          FontSize="30" Background="CornflowerBlue"
+                          FontWeight="Black" Foreground="Azure"
+                          TextAlignment="Center" />
+          </Grid>
+          <Border Grid.Row="1" Grid.Column="0" CornerRadius="15" Background="CornflowerBlue"
+                  Margin="150" Height="400" Width="800"
+                  HorizontalAlignment="Center" VerticalAlignment="Center">
+              
+              <Grid Margin="20" >
+                  
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*"/>
+                      <ColumnDefinition Width="*"/>
+                  </Grid.ColumnDefinitions>
+                  
+                  <Grid.RowDefinitions>
+                      <RowDefinition Height="*"/>
+                      <RowDefinition Height="*"/>
+                      <RowDefinition Height="*"/>
+                  </Grid.RowDefinitions>
+                  
+                  <TextBlock Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Text="Zaloguj do panelu Admina."
+                             FontSize="70" Foreground="AliceBlue"
+                             FontWeight="Bold" TextWrapping="WrapWithOverflow"
+                             Padding="10" TextAlignment="Center"
+                             HorizontalAlignment="Center" VerticalAlignment="Center"/>
+           
+                  <TextBox Grid.Column="1" Grid.Row="0" Watermark="Podaj login..."/>
+                  
+                  <TextBox Grid.Column="1" Grid.Row="1" Watermark="Podaj hasło..." PasswordChar="*"/>
+                  
+                  <Button Grid.Column="1" Grid.Row="2" Content="Zaloguj"
+                          Margin="20" Padding="20" FontSize="30"
+                          HorizontalAlignment="Stretch" Foreground="AliceBlue"
+                          HorizontalContentAlignment="Center"
+                  /> 
+              </Grid>
+          </Border>
+      </Grid>
+</UserControl>

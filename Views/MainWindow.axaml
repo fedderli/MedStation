@@ -8,29 +8,31 @@
         x:Class="MedStation.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         WindowStartupLocation="CenterScreen"
-        WindowState="Maximized"
-        >
-        
+        WindowState="Maximized">
+
     <Window.DataTemplates>
         <DataTemplate DataType="{x:Type vm:MainMenuWindowViewModel}">
-            <views:MainMenuWindow/>
+            <views:MainMenuWindow />
         </DataTemplate>
-        
+
         <DataTemplate DataType="{x:Type vm:AdminPanelWindowViewModel}">
-            <views:AdminPanelWindow/> 
+            <views:AdminPanelWindow />
         </DataTemplate>
-        
+
         <DataTemplate DataType="{x:Type vm:EmployeePanelWindowViewModel}">
-            <views:EmployeePanelWindow/>
+            <views:EmployeePanelWindow />
         </DataTemplate>
-        
+
         <DataTemplate DataType="{x:Type vm:PatientPanelWindowViewModel}">
-            <views:PatientPanelWindow/>
+            <views:PatientPanelWindow />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:AdminLoginWindowViewModel}">
+            <views:AdminLoginWindow/>
         </DataTemplate>
     </Window.DataTemplates>
-    
-    
-    <ContentControl Content="{Binding CurrentView}"/>
-        
-        
+
+
+    <ContentControl Content="{Binding CurrentView}" />
+
+
 </Window>

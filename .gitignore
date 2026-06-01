@@ -17,3 +17,6 @@
 bin/
 obj/
 
+Services/SupaBaseClientMenager.cs
+
+.idea/

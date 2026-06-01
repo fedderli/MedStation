@@ -1,10 +1,8 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
+﻿using Avalonia.Controls;
 
 namespace MedStation.Views;
 
-public partial class AdminPanelWindow : UserControl
+public partial class AdminPanelWindow : Window
 {
     public AdminPanelWindow()
     {

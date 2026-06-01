@@ -1,6 +1,5 @@
 ﻿namespace MedStation.ViewModels;
 
-public class EmployeePanelWindowViewModel: ViewModelBase
+public class EmployeePanelWindowViewModel : ViewModelBase
 {
-    
 }
