@@ -4,9 +4,9 @@ using Postgrest.Models;
 namespace MedStation.Models;
 
 [System.ComponentModel.DataAnnotations.Schema.Table("Employees")]
-public class Employees : BaseModel
+public class EmployeesModel : BaseModel
 {
-    [PrimaryKey("id", true)] public string Id { get; set; }
+    [PrimaryKey("id", false)] public string Id { get; set; }
 
     [Column("name")] public string Name { get; set; }
 
