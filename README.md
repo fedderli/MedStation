@@ -89,13 +89,14 @@ Projekt ma spełniać trzy funkcje:
 
 | Pole              | Typ        | Opis                      | Przykład                                   |
 |:------------------|:-----------|:--------------------------|:-------------------------------------------|
-| `Id`              | **String** | Id Wizyty.                | `"RE_43242"`                               |
-| `Id_Employee`     | **Int**    | Id Pracownika.            | `"LE_7234012"`                             |
-| `Id_Patient`      | **Int**    | Id Pacjenta.              | `"PA_3451234"`                             |
+| `Id`              | **String** | Id Receprty.              | `"RE_43242"`                               |
+| `Id`            | **String** | Id Wizyty.               | `"WZ_34612"`       |
+| `Id_Employee`     | **String**    | Id Pracownika.            | `"LE_7234012"`                             |
+| `Id_Patient`      | **String**    | Id Pacjenta.              | `"PA_3451234"`                             |
 | `Issue_Date`      | **String** | Data wydania recepty.     | `"21.07.2026"`                             |
 | `Expiration_Date` | **String** | Data wygasnięcia recepty. | `"28.07.2026"`                             |
 | `Medicament`      | **String** | Nazwa przepisanego leku   | `"Vicodin"`                                |
-| `Dosage`          | **String** | Nazwa przepisanego leku   | `"1 tabletka do posiłku rano i wieczorem"` |
+| `Dosage`          | **String** | Dawkowanie   | `"1 tabletka do posiłku rano i wieczorem"` |
 | `Is_Realized`     | **Bool**   | Czy zrealizowano recepte. | `True`                                     |
 
 
