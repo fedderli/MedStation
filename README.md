@@ -90,7 +90,7 @@ Projekt ma spełniać trzy funkcje:
 | Pole              | Typ        | Opis                      | Przykład                                   |
 |:------------------|:-----------|:--------------------------|:-------------------------------------------|
 | `Id`              | **String** | Id Receprty.              | `"RE_43242"`                               |
-| `Id`            | **String** | Id Wizyty.               | `"WZ_34612"`       |
+| `Id_Visit`            | **String** | Id Wizyty.               | `"WZ_34612"`       |
 | `Id_Employee`     | **String**    | Id Pracownika.            | `"LE_7234012"`                             |
 | `Id_Patient`      | **String**    | Id Pacjenta.              | `"PA_3451234"`                             |
 | `Issue_Date`      | **String** | Data wydania recepty.     | `"21.07.2026"`                             |
